@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/api/transcript/(?<videoID>[^/]+)",
-      "dest": "api/transcript.py?videoID=$videoID"
+      "src": "/api/transcript/(.*)",
+      "dest": "api/transcript.py"
     }
   ]
 }
