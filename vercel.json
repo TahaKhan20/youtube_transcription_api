@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "builds": [
     {
       "src": "api/transcript.py",
@@ -8,7 +9,7 @@
   "routes": [
     {
       "src": "/api/transcript/(?<videoID>[^/]+)",
-      "dest": "api/transcript.py"
+      "dest": "api/transcript.py?videoID=$videoID"
     }
   ]
 }
